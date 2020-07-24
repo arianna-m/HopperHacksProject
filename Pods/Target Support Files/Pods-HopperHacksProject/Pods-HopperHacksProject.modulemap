@@ -1,0 +1,6 @@
+framework module Pods_HopperHacksProject {
+  umbrella header "Pods-HopperHacksProject-umbrella.h"
+
+  export *
+  module * { export * }
+}

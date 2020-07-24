@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		28D7A703D076CFF9BE7D0704 /* Pods_HopperHacksProjectTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F6E9415215D24F6FB27444C /* Pods_HopperHacksProjectTests.framework */; };
+		2B1FE5BDD12A08EB5886B27C /* Pods_HopperHacksProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CF500A7863BF940F9F6166F /* Pods_HopperHacksProject.framework */; };
+		4C774CDAC80F161DC586A08E /* Pods_HopperHacksProject_HopperHacksProjectUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4EBF53110B96AC34A5107C55 /* Pods_HopperHacksProject_HopperHacksProjectUITests.framework */; };
 		C8773E4C24C8050300786A34 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8773E4B24C8050300786A34 /* AppDelegate.swift */; };
 		C8773E4E24C8050300786A34 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8773E4D24C8050300786A34 /* SceneDelegate.swift */; };
 		C8773E5024C8050300786A34 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8773E4F24C8050300786A34 /* FirstViewController.swift */; };
@@ -17,6 +20,7 @@
 		C8773E5D24C8050D00786A34 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C8773E5B24C8050D00786A34 /* LaunchScreen.storyboard */; };
 		C8773E6824C8050D00786A34 /* HopperHacksProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8773E6724C8050D00786A34 /* HopperHacksProjectTests.swift */; };
 		C8773E7324C8050D00786A34 /* HopperHacksProjectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8773E7224C8050D00786A34 /* HopperHacksProjectUITests.swift */; };
+		C8E1304324CA560A001DB7C0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C8E1304224CA5609001DB7C0 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +41,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0770642C884F380443AA23A3 /* Pods-HopperHacksProjectTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HopperHacksProjectTests.debug.xcconfig"; path = "Target Support Files/Pods-HopperHacksProjectTests/Pods-HopperHacksProjectTests.debug.xcconfig"; sourceTree = "<group>"; };
+		1AD6D16E9F4FBBDE3B8FBA89 /* Pods-HopperHacksProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HopperHacksProject.debug.xcconfig"; path = "Target Support Files/Pods-HopperHacksProject/Pods-HopperHacksProject.debug.xcconfig"; sourceTree = "<group>"; };
+		28FECD187E7A9694FBCD577B /* Pods-HopperHacksProjectTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HopperHacksProjectTests.release.xcconfig"; path = "Target Support Files/Pods-HopperHacksProjectTests/Pods-HopperHacksProjectTests.release.xcconfig"; sourceTree = "<group>"; };
+		2CF500A7863BF940F9F6166F /* Pods_HopperHacksProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HopperHacksProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		369D619D8A5C66F69B1AF138 /* Pods-HopperHacksProject-HopperHacksProjectUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HopperHacksProject-HopperHacksProjectUITests.release.xcconfig"; path = "Target Support Files/Pods-HopperHacksProject-HopperHacksProjectUITests/Pods-HopperHacksProject-HopperHacksProjectUITests.release.xcconfig"; sourceTree = "<group>"; };
+		4EBF53110B96AC34A5107C55 /* Pods_HopperHacksProject_HopperHacksProjectUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HopperHacksProject_HopperHacksProjectUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6F6E9415215D24F6FB27444C /* Pods_HopperHacksProjectTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HopperHacksProjectTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		88D42F70605DCA21E45BD436 /* Pods-HopperHacksProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HopperHacksProject.release.xcconfig"; path = "Target Support Files/Pods-HopperHacksProject/Pods-HopperHacksProject.release.xcconfig"; sourceTree = "<group>"; };
+		965F2BA0CD5A11FCBADFEF3F /* Pods-HopperHacksProject-HopperHacksProjectUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HopperHacksProject-HopperHacksProjectUITests.debug.xcconfig"; path = "Target Support Files/Pods-HopperHacksProject-HopperHacksProjectUITests/Pods-HopperHacksProject-HopperHacksProjectUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		C8773E4824C8050300786A34 /* HopperHacksProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HopperHacksProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C8773E4B24C8050300786A34 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C8773E4D24C8050300786A34 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -53,6 +66,7 @@
 		C8773E6E24C8050D00786A34 /* HopperHacksProjectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HopperHacksProjectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C8773E7224C8050D00786A34 /* HopperHacksProjectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HopperHacksProjectUITests.swift; sourceTree = "<group>"; };
 		C8773E7424C8050D00786A34 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C8E1304224CA5609001DB7C0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2B1FE5BDD12A08EB5886B27C /* Pods_HopperHacksProject.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -67,6 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				28D7A703D076CFF9BE7D0704 /* Pods_HopperHacksProjectTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,12 +90,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C774CDAC80F161DC586A08E /* Pods_HopperHacksProject_HopperHacksProjectUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		09BA0D710BD7E8AA69A7AF71 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1AD6D16E9F4FBBDE3B8FBA89 /* Pods-HopperHacksProject.debug.xcconfig */,
+				88D42F70605DCA21E45BD436 /* Pods-HopperHacksProject.release.xcconfig */,
+				965F2BA0CD5A11FCBADFEF3F /* Pods-HopperHacksProject-HopperHacksProjectUITests.debug.xcconfig */,
+				369D619D8A5C66F69B1AF138 /* Pods-HopperHacksProject-HopperHacksProjectUITests.release.xcconfig */,
+				0770642C884F380443AA23A3 /* Pods-HopperHacksProjectTests.debug.xcconfig */,
+				28FECD187E7A9694FBCD577B /* Pods-HopperHacksProjectTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		AD3DCC2289537501369BD6C7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2CF500A7863BF940F9F6166F /* Pods_HopperHacksProject.framework */,
+				4EBF53110B96AC34A5107C55 /* Pods_HopperHacksProject_HopperHacksProjectUITests.framework */,
+				6F6E9415215D24F6FB27444C /* Pods_HopperHacksProjectTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		C8773E3F24C8050200786A34 = {
 			isa = PBXGroup;
 			children = (
@@ -87,6 +128,8 @@
 				C8773E6624C8050D00786A34 /* HopperHacksProjectTests */,
 				C8773E7124C8050D00786A34 /* HopperHacksProjectUITests */,
 				C8773E4924C8050300786A34 /* Products */,
+				09BA0D710BD7E8AA69A7AF71 /* Pods */,
+				AD3DCC2289537501369BD6C7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -111,6 +154,7 @@
 				C8773E5924C8050D00786A34 /* Assets.xcassets */,
 				C8773E5B24C8050D00786A34 /* LaunchScreen.storyboard */,
 				C8773E5E24C8050D00786A34 /* Info.plist */,
+				C8E1304224CA5609001DB7C0 /* GoogleService-Info.plist */,
 				C8773E5624C8050300786A34 /* HopperHacksProject.xcdatamodeld */,
 			);
 			path = HopperHacksProject;
@@ -141,9 +185,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C8773E7724C8050D00786A34 /* Build configuration list for PBXNativeTarget "HopperHacksProject" */;
 			buildPhases = (
+				F8C800463CDC26D297A4CBC9 /* [CP] Check Pods Manifest.lock */,
 				C8773E4424C8050300786A34 /* Sources */,
 				C8773E4524C8050300786A34 /* Frameworks */,
 				C8773E4624C8050300786A34 /* Resources */,
+				B14F86057F2559BCC41F2255 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -158,6 +204,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C8773E7A24C8050D00786A34 /* Build configuration list for PBXNativeTarget "HopperHacksProjectTests" */;
 			buildPhases = (
+				70ECE475A7F7C51E4C34E0F5 /* [CP] Check Pods Manifest.lock */,
 				C8773E5F24C8050D00786A34 /* Sources */,
 				C8773E6024C8050D00786A34 /* Frameworks */,
 				C8773E6124C8050D00786A34 /* Resources */,
@@ -176,9 +223,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C8773E7D24C8050D00786A34 /* Build configuration list for PBXNativeTarget "HopperHacksProjectUITests" */;
 			buildPhases = (
+				60310F0628FDB77B65D8DEA9 /* [CP] Check Pods Manifest.lock */,
 				C8773E6A24C8050D00786A34 /* Sources */,
 				C8773E6B24C8050D00786A34 /* Frameworks */,
 				C8773E6C24C8050D00786A34 /* Resources */,
+				F6465D71D170F3B3909F0ABF /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -239,6 +288,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C8773E5D24C8050D00786A34 /* LaunchScreen.storyboard in Resources */,
+				C8E1304324CA560A001DB7C0 /* GoogleService-Info.plist in Resources */,
 				C8773E5A24C8050D00786A34 /* Assets.xcassets in Resources */,
 				C8773E5524C8050300786A34 /* Main.storyboard in Resources */,
 			);
@@ -259,6 +309,109 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		60310F0628FDB77B65D8DEA9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HopperHacksProject-HopperHacksProjectUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		70ECE475A7F7C51E4C34E0F5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HopperHacksProjectTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B14F86057F2559BCC41F2255 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HopperHacksProject/Pods-HopperHacksProject-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HopperHacksProject/Pods-HopperHacksProject-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-HopperHacksProject/Pods-HopperHacksProject-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F6465D71D170F3B3909F0ABF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HopperHacksProject-HopperHacksProjectUITests/Pods-HopperHacksProject-HopperHacksProjectUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HopperHacksProject-HopperHacksProjectUITests/Pods-HopperHacksProject-HopperHacksProjectUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-HopperHacksProject-HopperHacksProjectUITests/Pods-HopperHacksProject-HopperHacksProjectUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F8C800463CDC26D297A4CBC9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HopperHacksProject-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		C8773E4424C8050300786A34 /* Sources */ = {
@@ -440,6 +593,7 @@
 		};
 		C8773E7824C8050D00786A34 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1AD6D16E9F4FBBDE3B8FBA89 /* Pods-HopperHacksProject.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -458,6 +612,7 @@
 		};
 		C8773E7924C8050D00786A34 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 88D42F70605DCA21E45BD436 /* Pods-HopperHacksProject.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -476,6 +631,7 @@
 		};
 		C8773E7B24C8050D00786A34 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0770642C884F380443AA23A3 /* Pods-HopperHacksProjectTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -498,6 +654,7 @@
 		};
 		C8773E7C24C8050D00786A34 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 28FECD187E7A9694FBCD577B /* Pods-HopperHacksProjectTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -520,6 +677,7 @@
 		};
 		C8773E7E24C8050D00786A34 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 965F2BA0CD5A11FCBADFEF3F /* Pods-HopperHacksProject-HopperHacksProjectUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -540,6 +698,7 @@
 		};
 		C8773E7F24C8050D00786A34 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 369D619D8A5C66F69B1AF138 /* Pods-HopperHacksProject-HopperHacksProjectUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
