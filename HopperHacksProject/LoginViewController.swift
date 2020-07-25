@@ -38,20 +38,21 @@ class LoginViewController: UIViewController {
         // storing email and password
         guard let username = username.text else {return}
         guard let password = password.text else {return}
-        var job = ""
+        var job = "Receive letters"
         // signing in the user and dismissing unless an error occurs
         Auth.auth().signIn(withEmail: username, password: password) { (user, error) in
             
             if error == nil && user != nil{
                 guard let uid = Auth.auth().currentUser?.uid else {return}
-                let ref = Database.database().reference().child("Users/\(uid)").child("Job")
+                let ref = Database.database().reference().child("Users/\(uid)/Job")
                 ref.observeSingleEvent(of: .value) { (snapshot) in
-                    job = snapshot.value as? String ?? ""
+                    job = snapshot.value as? String ?? "Receive letters"
+                    self.performSegue(withIdentifier: "to\(job)", sender: nil)
+
                 }
                 
-                self.performSegue(withIdentifier: "to\(job)", sender: nil)
-                
                 self.dismiss(animated: true, completion: nil)
+
 
             }
             else{

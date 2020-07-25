@@ -368,7 +368,6 @@
                                 <state key="normal" title="Login"/>
                                 <connections>
                                     <action selector="loginAction:" destination="o8J-2Q-0fB" eventType="touchUpInside" id="jJi-F1-XQU"/>
-                                    <segue destination="UHD-ia-pHA" kind="show" identifier="loginToHome" id="qT8-VS-VQV"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OPJ-md-AXY">
@@ -405,6 +404,8 @@
                     <connections>
                         <outlet property="password" destination="W0X-zX-C9y" id="hOV-63-mrU"/>
                         <outlet property="username" destination="elo-9S-yFF" id="VHq-g0-3dw"/>
+                        <segue destination="49e-Tb-3d3" kind="show" identifier="toReceive letters" id="9Of-Yv-SoJ"/>
+                        <segue destination="OA5-Rc-xmc" kind="show" identifier="toWrite letters" id="Oil-xJ-kR1"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ask-gc-rLq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -629,6 +630,10 @@
             <point key="canvasLocation" x="-3797" y="0.0"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="9Of-Yv-SoJ"/>
+        <segue reference="Oil-xJ-kR1"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <image name="chevron.left" catalog="system" width="96" height="128"/>
         <image name="first" width="30" height="30"/>
