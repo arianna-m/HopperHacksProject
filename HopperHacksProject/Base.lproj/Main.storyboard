@@ -107,6 +107,10 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="img" destination="ggC-fz-xzo" id="7gK-nb-Ve3"/>
+                                            <outlet property="label" destination="S5f-pk-ihW" id="R5y-05-DWj"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
