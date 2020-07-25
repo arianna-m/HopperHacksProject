@@ -149,10 +149,10 @@
             </objects>
             <point key="canvasLocation" x="1330.4347826086957" y="-1153.125"/>
         </scene>
-        <!--View Controller-->
+        <!--Reading Cell View Controller-->
         <scene sceneID="y47-fB-fMV">
             <objects>
-                <viewController id="CKP-Qi-LfE" sceneMemberID="viewController">
+                <viewController id="CKP-Qi-LfE" customClass="ReadingCellViewController" customModule="HopperHacksProject" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="1IR-DO-y0N">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -189,6 +189,10 @@
                         <viewLayoutGuide key="safeArea" id="Baw-1D-dTZ"/>
                     </view>
                     <navigationItem key="navigationItem" id="2fa-wE-mbP"/>
+                    <connections>
+                        <outlet property="bio" destination="v5j-JC-WI8" id="cs9-pg-Pt5"/>
+                        <outlet property="name" destination="7Ma-aD-an6" id="tC4-hf-z9C"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WJK-Y3-aG3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

@@ -40,7 +40,16 @@ class FirstWriterViewController: UIViewController, UITableViewDelegate, UITableV
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         self.performSegue(withIdentifier: "cellmove", sender: tableView.cellForRow(at: indexPath))
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let cell = sender as? CellTableViewCell {
+            if let vc = segue.destination as? ReadingCellViewController {
+                vc.name.text = cell.label.text
+            }
+        }
+    }
 }
+
 
 //
 //extension UIViewController: UITableViewDelegate, UITableViewDataSource {
