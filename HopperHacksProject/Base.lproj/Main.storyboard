@@ -443,7 +443,7 @@
                                 <state key="normal" title="Done"/>
                                 <connections>
                                     <action selector="secondNext:" destination="XGe-ce-7Om" eventType="touchUpInside" id="xf8-H9-AX4"/>
-                                    <segue destination="49e-Tb-3d3" kind="show" id="RAD-gq-rHd"/>
+                                    <segue destination="49e-Tb-3d3" kind="show" identifier="signupToHome" id="RAD-gq-rHd"/>
                                 </connections>
                             </button>
                         </subviews>
