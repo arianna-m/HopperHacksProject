@@ -10,7 +10,7 @@ import UIKit
 import FirebaseAuth
 import Firebase
 
-class SignUpUsername_PasswordViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate {
+class SignUpUsername_PasswordViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate, UITextFieldDelegate {
     
     // Outlets from the storyboard
     @IBOutlet weak var username: UITextField!
@@ -23,6 +23,9 @@ class SignUpUsername_PasswordViewController: UIViewController, UIPickerViewDataS
     // set selectedJob default to Receive in case user chooses not to move pickerView - didSelectRow function will not run, but intent will be to choose receive letters
     var selectedJob = "Receive letters"
     let job = ["Receive letters", "Write letters"]
+    // firstName and lastName receive values from SignUpInfoViewController
+    var firstName: String?
+    var lastName: String?
     
     // PickerView implementation
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
@@ -45,6 +48,7 @@ class SignUpUsername_PasswordViewController: UIViewController, UIPickerViewDataS
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        username.delegate = self
 
         // Do any additional setup after loading the view.
     }

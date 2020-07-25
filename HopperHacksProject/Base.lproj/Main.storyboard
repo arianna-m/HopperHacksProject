@@ -467,7 +467,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="izI-Dm-RiU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2133" y="-320"/>
+            <point key="canvasLocation" x="-2133.3333333333335" y="-320.08928571428572"/>
         </scene>
         <!--Sign Up Username Password View Controller-->
         <scene sceneID="hxz-l8-GHH">
@@ -560,7 +560,7 @@
                         <outlet property="userTypePickerView" destination="nGJ-Bq-8dw" id="rQD-PD-06J"/>
                         <outlet property="username" destination="vwr-wu-w78" id="WFa-20-gaj"/>
                         <segue destination="49e-Tb-3d3" kind="show" identifier="Receive lettersSegue" id="Lb6-mb-THq"/>
-                        <segue destination="OA5-Rc-xmc" kind="show" identifier="Send lettersSegue" id="6p2-ac-dto"/>
+                        <segue destination="OA5-Rc-xmc" kind="show" identifier="Write lettersSegue" id="6p2-ac-dto"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hC6-OL-f3z" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

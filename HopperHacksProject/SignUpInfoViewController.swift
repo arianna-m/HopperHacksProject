@@ -51,5 +51,11 @@ class SignUpInfoViewController: UIViewController, UIPickerViewDataSource, UIPick
         // Pass the selected object to the new view controller.
     }
     */
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let vc = segue.destination as? SignUpUsername_PasswordViewController {
+            vc.firstName = firstNameTextField.text ?? ""
+            vc.lastName = lastNameTextField.text ?? ""
+        }
+    }
 
 }
