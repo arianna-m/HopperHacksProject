@@ -12,25 +12,29 @@ import Firebase
 
 class SignUpUsername_PasswordViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate {
     
+    // Outlets from the storyboard
     @IBOutlet weak var username: UITextField!
-    
     @IBOutlet weak var password: UITextField!
-    
     @IBOutlet weak var confirmPassword: UITextField!
-
-
     @IBOutlet weak var IAmLabel: UILabel!
-    
     @IBOutlet weak var userTypePickerView: UIPickerView!
     
-    let job = ["Recieve letters", "Send letters"]
+    // Declaring variables
+    var selectedJob = ""
+    let job = ["Receive letters", "Send letters"]
     
+    // PickerView implementation
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
         return 1
     }
     
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
         return job[row]
+    }
+    
+    // Storing the selected job
+    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        selectedJob = job[row]
     }
     
     func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
@@ -55,48 +59,50 @@ class SignUpUsername_PasswordViewController: UIViewController, UIPickerViewDataS
     }
     */
 
-    
+    // Actions for when the button is pressed
     @IBAction func secondNext(_ sender: UIButton) {
         if password.text != confirmPassword.text {
-        let alertController = UIAlertController(title: "Password Incorrect", message: "Please re-type password", preferredStyle: .alert)
-        let defaultAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
+            let alertController = UIAlertController(title: "Passwords Incorrect", message: "Please re-type password", preferredStyle: .alert)
+            let defaultAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
                     
-        alertController.addAction(defaultAction)
-        self.present(alertController, animated: true, completion: nil)
+            alertController.addAction(defaultAction)
+            self.present(alertController, animated: true, completion: nil)
         }
         else{
             Auth.auth().createUser(withEmail: username.text!, password: password.text!){ (user, error) in
-         if error == nil {
-           self.performSegue(withIdentifier: "signupToHome", sender: self)
-                        }
-         else{
-           let alertController = UIAlertController(title: "Error", message: error?.localizedDescription, preferredStyle: .alert)
-           let defaultAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
+                if error == nil {
+                    self.performSegue(withIdentifier: "signupToHome", sender: self)
+                }
+                else{
+                    let alertController = UIAlertController(title: "Error", message: error?.localizedDescription, preferredStyle: .alert)
+                    let defaultAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
                             
-            alertController.addAction(defaultAction)
-            self.present(alertController, animated: true, completion: nil)
+                    alertController.addAction(defaultAction)
+                    self.present(alertController, animated: true, completion: nil)
                }
-                    }
-              }
+            }
         }
-            
-        }
-
-class HomeViewController: UIViewController, UIPickerViewDelegate {
-func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
-    print(row)
-    if row == 0 {
-        let vcOne = storyboard?.instantiateViewController(withIdentifier: "First View Controller") as! FirstViewController
-        present(vcOne, animated: true, completion: nil)
-        // first selection, initialize the VC related with it
-    } else if row == 1 {
-        let vcTwo = storyboard?.instantiateViewController(withIdentifier: "FirstWriterViewController") as! FirstWriterViewController
-        present(vcTwo, animated: true, completion: nil)
-        // second selection, initialize the VC related with it
-    } else {
-        // other selections, you get the idea, you can also do switch-case
+        self.performSegue(withIdentifier: "\(selectedJob)Segue", sender: nil)
+        
     }
+            
 }
-
-}
+//
+//class HomeViewController: UIViewController, UIPickerViewDelegate {
+//    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+//        print(row)
+//        if row == 0 {
+//            let vcOne = storyboard?.instantiateViewController(withIdentifier: "First View Controller") as! FirstViewController
+//            present(vcOne, animated: true, completion: nil)
+//        // first selection, initialize the VC related with it
+//        } else if row == 1 {
+//            let vcTwo = storyboard?.instantiateViewController(withIdentifier: "FirstWriterViewController") as! FirstWriterViewController
+//            present(vcTwo, animated: true, completion: nil)
+//        // second selection, initialize the VC related with it
+//        } else {
+//        // other selections, you get the idea, you can also do switch-case
+//    }
+//}
+//
+//}
 

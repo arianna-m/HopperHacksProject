@@ -6,8 +6,6 @@
 //  Copyright © 2020 HopperHacks. All rights reserved.
 //
 
-// hello! test comment :D
-
 import UIKit
 import FirebaseAuth
 import Firebase
@@ -15,8 +13,6 @@ import Firebase
 class LoginViewController: UIViewController {
     
     @IBOutlet weak var username: UITextField!
-    
-    
     @IBOutlet weak var password: UITextField!
     
     override func viewDidLoad() {
@@ -38,20 +34,25 @@ class LoginViewController: UIViewController {
 
     
     @IBAction func loginAction(_ sender: UIButton) {
-        Auth.auth().signIn(withEmail: username.text!, password: password.text!) { (user, error) in
-        guard let strongSelf = self else { return
-           if error == nil{
-             self.performSegue(withIdentifier: "loginToHome", sender: self)
-                          }
+        // storing email and password
+        guard let username = username.text else {return}
+        guard let password = password.text else {return}
+        
+        // signing in the user and dismissing unless an error occurs
+        Auth.auth().signIn(withEmail: username, password: password) { (user, error) in
+            
+            if error == nil && user != nil{
+                self.dismiss(animated: true, completion: nil)
+            }
             else{
-             let alertController = UIAlertController(title: "Error", message: error?.localizedDescription, preferredStyle: .alert)
-             let defaultAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
+                print(error!.localizedDescription)
+                let alertController = UIAlertController(title: "Error", message: error?.localizedDescription, preferredStyle: .alert)
+                let defaultAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
 
-              alertController.addAction(defaultAction)
-              self.present(alertController, animated: true, completion: nil)
-                 }
+                alertController.addAction(defaultAction)
+                self.present(alertController, animated: true, completion: nil)
+            }
         }
-    }
 
     }
 }
