@@ -12,9 +12,17 @@ class ReadingCellViewController: UIViewController {
 
     @IBOutlet weak var name: UILabel!
     @IBOutlet weak var bio: UILabel!
-
+    @IBOutlet weak var img: UIImageView!
+    
+    // John Smith is default name, will be changed when passed from First Writer View Controller
+    var passedName = "John Smith"
+    var bios = ["Jane Taylor": "From Santa Clara, California\nI have 2 loving granddaughters who like to play soccer\nMy favorite drink is iced tea\nI loved to play bridge with my friends on Thursday and bake lemon cookies", "Carl Fredricksen":"From Paradise, California\nRetired helium balloon salesman\nI wear glasses\nEnjoy playing tennis and watching TV"]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        name.text = passedName
+        bio.text = bios[passedName]
+        img.image = UIImage(named: passedName)
 
         // Do any additional setup after loading the view.
     }

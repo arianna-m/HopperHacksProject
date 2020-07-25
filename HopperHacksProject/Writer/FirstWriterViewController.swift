@@ -10,7 +10,7 @@ import UIKit
 
 class FirstWriterViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
-    var names = ["Jane Taylor", "Kyle Tran", "Mary Lane", "Joe Brown", "Jamie Rose", "Chance Kim"]
+    var names = ["Jane Taylor", "Carl Fredricksen", "Kyle Tran", "Mary Lane", "Joe Brown", "Jamie Rose", "Chance Kim"]
 
     @IBOutlet weak var tableView: UITableView!
     
@@ -39,12 +39,15 @@ class FirstWriterViewController: UIViewController, UITableViewDelegate, UITableV
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         self.performSegue(withIdentifier: "cellmove", sender: tableView.cellForRow(at: indexPath))
+        if let index = self.tableView.indexPathForSelectedRow{
+            self.tableView.deselectRow(at: index, animated: true)
+        }
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let cell = sender as? CellTableViewCell {
             if let vc = segue.destination as? ReadingCellViewController {
-                vc.name.text = cell.label.text
+                vc.passedName = cell.label.text ?? "John"
             }
         }
     }

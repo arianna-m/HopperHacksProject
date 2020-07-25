@@ -119,7 +119,6 @@
                                         <connections>
                                             <outlet property="img" destination="ggC-fz-xzo" id="YLb-kl-pTE"/>
                                             <outlet property="label" destination="S5f-pk-ihW" id="R5y-05-DWj"/>
-                                            <segue destination="CKP-Qi-LfE" kind="show" identifier="cellmove" id="kzp-DH-jFf"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -143,6 +142,7 @@
                     <tabBarItem key="tabBarItem" title="Item 1" id="5Wa-cZ-fS3"/>
                     <connections>
                         <outlet property="tableView" destination="bm8-fK-0ga" id="pig-DZ-cQ8"/>
+                        <segue destination="CKP-Qi-LfE" kind="show" identifier="cellmove" id="oZH-Y5-0DY"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kMQ-03-GGh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -168,7 +168,7 @@
                                 <rect key="frame" x="73" y="171" width="270" height="193"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="bio" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v5j-JC-WI8">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="bio" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v5j-JC-WI8">
                                 <rect key="frame" x="39" y="465" width="338" height="175"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
@@ -193,8 +193,9 @@
                     </view>
                     <navigationItem key="navigationItem" id="2fa-wE-mbP"/>
                     <connections>
-                        <outlet property="bio" destination="v5j-JC-WI8" id="cs9-pg-Pt5"/>
-                        <outlet property="name" destination="7Ma-aD-an6" id="tC4-hf-z9C"/>
+                        <outlet property="bio" destination="v5j-JC-WI8" id="xic-kA-duq"/>
+                        <outlet property="img" destination="Rgx-SJ-XOU" id="Y3s-FG-GTa"/>
+                        <outlet property="name" destination="7Ma-aD-an6" id="GEQ-hN-quQ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WJK-Y3-aG3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -768,7 +769,7 @@
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="9Of-Yv-SoJ"/>
-        <segue reference="Oil-xJ-kR1"/>
+        <segue reference="6p2-ac-dto"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="chevron.left" catalog="system" width="96" height="128"/>
