@@ -22,11 +22,14 @@ class FirstWriterViewController: UIViewController {
 
 }
 
-extension ViewController: UITableViewDelegate, UITableViewDataSource {
+extension UIViewController: UITableViewDelegate, UITableViewDataSource {
     
-    public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        <#code#>
+    public func numberOfSections(in tableView: UITableView) -> Int {
+        return name.count
     }
     
-    
+    public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as? CellTableViewCell
+        return cell 
+    }
 }
