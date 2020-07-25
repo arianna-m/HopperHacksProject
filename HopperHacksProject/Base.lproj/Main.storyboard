@@ -21,7 +21,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GbT-sv-15w" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-297" y="1568"/>
+            <point key="canvasLocation" x="-1381" y="1983"/>
         </scene>
         <!--Item 1-->
         <scene sceneID="OLL-WL-D06">
@@ -37,7 +37,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xdL-D9-jHs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-296" y="895"/>
+            <point key="canvasLocation" x="-1381" y="1310"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="rQE-d1-dZw">
@@ -56,7 +56,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9nf-Hw-tWt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1094" y="1096"/>
+            <point key="canvasLocation" x="-2178" y="1511"/>
         </scene>
         <!--Item 2-->
         <scene sceneID="aQh-kS-JX5">
@@ -72,7 +72,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5ee-ox-4QW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="399" y="-925"/>
+            <point key="canvasLocation" x="1374" y="-445"/>
         </scene>
         <!--Item 1-->
         <scene sceneID="Ied-hd-JjZ">
@@ -137,7 +137,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kMQ-03-GGh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="356.52173913043481" y="-1633.2589285714284"/>
+            <point key="canvasLocation" x="1332" y="-1153"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="y47-fB-fMV">
@@ -170,6 +170,9 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Write Letter"/>
+                                <connections>
+                                    <segue destination="DsS-AM-DBo" kind="show" id="p9x-bs-aSH"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.75545984509999997" green="0.92065829040000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -178,22 +181,77 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WJK-Y3-aG3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1186.9565217391305" y="-1627.2321428571429"/>
+            <point key="canvasLocation" x="2187" y="-1153"/>
         </scene>
-        <!--View Controller-->
+        <!--Write Letters View Controller-->
         <scene sceneID="Zha-ee-CdU">
             <objects>
-                <viewController id="DsS-AM-DBo" sceneMemberID="viewController">
+                <viewController id="DsS-AM-DBo" customClass="WriteLettersViewController" customModule="HopperHacksProject" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="GpX-LN-Ba5">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tfs-ga-6sX">
+                                <rect key="frame" x="167" y="748" width="80" height="30"/>
+                                <state key="normal" title="Send Letter"/>
+                                <connections>
+                                    <action selector="sendButtonTouchUp:" destination="DsS-AM-DBo" eventType="touchUpInside" id="F4e-2Z-kP9"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Message" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u3j-e1-aXL">
+                                <rect key="frame" x="172.5" y="50" width="69" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="YBh-fD-0eq">
+                                <rect key="frame" x="20" y="99" width="374" height="475"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="475" id="xPV-KL-ntR"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email (optional)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ca3-k8-Bx9">
+                                <rect key="frame" x="147.5" y="609" width="119" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HyK-xL-c4U">
+                                <rect key="frame" x="20" y="658" width="374" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="ca3-k8-Bx9" firstAttribute="top" secondItem="YBh-fD-0eq" secondAttribute="bottom" constant="35" id="2xu-bW-jAa"/>
+                            <constraint firstItem="u3j-e1-aXL" firstAttribute="top" secondItem="l45-ef-XSs" secondAttribute="top" constant="50" id="5zE-qC-UUj"/>
+                            <constraint firstItem="YBh-fD-0eq" firstAttribute="top" secondItem="u3j-e1-aXL" secondAttribute="bottom" constant="28" id="ACw-2h-YeH"/>
+                            <constraint firstItem="ca3-k8-Bx9" firstAttribute="centerX" secondItem="GpX-LN-Ba5" secondAttribute="centerX" id="HJg-dj-lVG"/>
+                            <constraint firstItem="u3j-e1-aXL" firstAttribute="centerX" secondItem="GpX-LN-Ba5" secondAttribute="centerX" id="K0H-Se-zKH"/>
+                            <constraint firstItem="l45-ef-XSs" firstAttribute="trailing" secondItem="HyK-xL-c4U" secondAttribute="trailing" constant="20" id="VdU-jc-loy"/>
+                            <constraint firstItem="l45-ef-XSs" firstAttribute="trailing" secondItem="YBh-fD-0eq" secondAttribute="trailing" constant="20" id="ff6-ia-vLj"/>
+                            <constraint firstItem="YBh-fD-0eq" firstAttribute="leading" secondItem="l45-ef-XSs" secondAttribute="leading" constant="20" id="fmA-UU-RHR"/>
+                            <constraint firstItem="Tfs-ga-6sX" firstAttribute="top" secondItem="HyK-xL-c4U" secondAttribute="bottom" constant="56" id="isK-Rj-n7k"/>
+                            <constraint firstItem="l45-ef-XSs" firstAttribute="bottom" secondItem="Tfs-ga-6sX" secondAttribute="bottom" constant="30" id="jQK-Q5-GRs"/>
+                            <constraint firstItem="HyK-xL-c4U" firstAttribute="leading" secondItem="l45-ef-XSs" secondAttribute="leading" constant="20" id="kqB-Nv-uOp"/>
+                            <constraint firstItem="HyK-xL-c4U" firstAttribute="top" secondItem="ca3-k8-Bx9" secondAttribute="bottom" constant="28" id="pRV-ev-GSt"/>
+                            <constraint firstItem="Tfs-ga-6sX" firstAttribute="centerX" secondItem="GpX-LN-Ba5" secondAttribute="centerX" id="tzS-m6-QeZ"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="l45-ef-XSs"/>
                     </view>
+                    <navigationItem key="navigationItem" id="0BG-Cn-PMB"/>
+                    <connections>
+                        <outlet property="emailTextField" destination="HyK-xL-c4U" id="U34-Or-BKg"/>
+                        <outlet property="messageTextField" destination="YBh-fD-0eq" id="SpL-U4-6xw"/>
+                        <outlet property="sendButton" destination="Tfs-ga-6sX" id="Uw2-K8-6Dx"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Eju-pe-Ygg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1965" y="-1619"/>
+            <point key="canvasLocation" x="2992.753623188406" y="-1153.125"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="BUy-N6-wiv">
@@ -212,7 +270,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2g8-M1-Vfj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-557" y="-1129"/>
+            <point key="canvasLocation" x="417" y="-649"/>
         </scene>
         <!--First-->
         <scene sceneID="hNz-n2-bh7">
@@ -238,7 +296,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1211.5942028985507" y="-320.08928571428572"/>
+            <point key="canvasLocation" x="1388" y="410"/>
         </scene>
         <!--Second-->
         <scene sceneID="wg7-f3-ORb">
@@ -290,7 +348,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1211.5942028985507" y="349.55357142857139"/>
+            <point key="canvasLocation" x="1388" y="1079"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="MnC-X0-r00">
@@ -333,7 +391,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tNK-M7-FRb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1984.057971014493" y="355.58035714285711"/>
+            <point key="canvasLocation" x="2161" y="1085"/>
         </scene>
         <!--Start View Controller-->
         <scene sceneID="L4w-Rs-NdR">
@@ -615,7 +673,6 @@
         <scene sceneID="yl2-sM-qoP">
             <objects>
                 <tabBarController id="49e-Tb-3d3" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" id="yW4-PY-sz7"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="W28-zg-YXA">
                         <rect key="frame" x="0.0" y="975" width="768" height="49"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
@@ -628,7 +685,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="359" y="1"/>
+            <point key="canvasLocation" x="535" y="731"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="MBb-xf-BUD">
@@ -650,7 +707,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="9Of-Yv-SoJ"/>
+        <segue reference="Lb6-mb-THq"/>
         <segue reference="Oil-xJ-kR1"/>
     </inferredMetricsTieBreakers>
     <resources>
