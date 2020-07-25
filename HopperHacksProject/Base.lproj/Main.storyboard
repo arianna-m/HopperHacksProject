@@ -541,7 +541,7 @@
                         <outlet property="userTypePickerView" destination="nGJ-Bq-8dw" id="rQD-PD-06J"/>
                         <outlet property="username" destination="vwr-wu-w78" id="WFa-20-gaj"/>
                         <segue destination="49e-Tb-3d3" kind="show" identifier="Receive lettersSegue" id="Lb6-mb-THq"/>
-                        <segue destination="UHD-ia-pHA" kind="show" identifier="Send lettersSegue" id="X01-7M-pt8"/>
+                        <segue destination="OA5-Rc-xmc" kind="show" identifier="Send lettersSegue" id="6p2-ac-dto"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hC6-OL-f3z" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -586,9 +586,6 @@
             <point key="canvasLocation" x="-3797" y="0.0"/>
         </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="X01-7M-pt8"/>
-    </inferredMetricsTieBreakers>
     <resources>
         <image name="chevron.left" catalog="system" width="96" height="128"/>
         <image name="first" width="30" height="30"/>
