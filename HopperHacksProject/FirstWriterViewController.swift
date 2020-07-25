@@ -24,6 +24,7 @@ class FirstWriterViewController: UIViewController {
     var names = ["Jane Taylor", "Kyle Tran", "Mary Lane", "Joe Brown", "Jamie Rose", "Chance Kim"]
 
 extension UIViewController: UITableViewDelegate, UITableViewDataSource {
+    
     public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return names.count
     }
