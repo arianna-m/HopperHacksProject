@@ -12,6 +12,7 @@
 		4C774CDAC80F161DC586A08E /* Pods_HopperHacksProject_HopperHacksProjectUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4EBF53110B96AC34A5107C55 /* Pods_HopperHacksProject_HopperHacksProjectUITests.framework */; };
 		C85E6BD524CC7EC3007E2B81 /* FirstWriterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C85E6BD424CC7EC3007E2B81 /* FirstWriterViewController.swift */; };
 		C85E6BD724CC7EE9007E2B81 /* SecondWriterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C85E6BD624CC7EE9007E2B81 /* SecondWriterViewController.swift */; };
+		C85E6BD924CCC512007E2B81 /* CellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C85E6BD824CCC512007E2B81 /* CellTableViewCell.swift */; };
 		C8773E4C24C8050300786A34 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8773E4B24C8050300786A34 /* AppDelegate.swift */; };
 		C8773E4E24C8050300786A34 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8773E4D24C8050300786A34 /* SceneDelegate.swift */; };
 		C8773E5024C8050300786A34 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8773E4F24C8050300786A34 /* FirstViewController.swift */; };
@@ -59,6 +60,7 @@
 		965F2BA0CD5A11FCBADFEF3F /* Pods-HopperHacksProject-HopperHacksProjectUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HopperHacksProject-HopperHacksProjectUITests.debug.xcconfig"; path = "Target Support Files/Pods-HopperHacksProject-HopperHacksProjectUITests/Pods-HopperHacksProject-HopperHacksProjectUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		C85E6BD424CC7EC3007E2B81 /* FirstWriterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstWriterViewController.swift; sourceTree = "<group>"; };
 		C85E6BD624CC7EE9007E2B81 /* SecondWriterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondWriterViewController.swift; sourceTree = "<group>"; };
+		C85E6BD824CCC512007E2B81 /* CellTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellTableViewCell.swift; sourceTree = "<group>"; };
 		C8773E4824C8050300786A34 /* HopperHacksProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HopperHacksProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C8773E4B24C8050300786A34 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C8773E4D24C8050300786A34 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -171,6 +173,7 @@
 				C8AC0ECB24CBBC920068FC79 /* SignUpUsername&PasswordViewController.swift */,
 				C8AC0EC724CBBC540068FC79 /* LoginViewController.swift */,
 				C8AC0ECD24CBBE3E0068FC79 /* IAmAViewController.swift */,
+				C85E6BD824CCC512007E2B81 /* CellTableViewCell.swift */,
 				C8773E5924C8050D00786A34 /* Assets.xcassets */,
 				C8773E5B24C8050D00786A34 /* LaunchScreen.storyboard */,
 				C8773E5E24C8050D00786A34 /* Info.plist */,
@@ -446,6 +449,7 @@
 				C8773E4C24C8050300786A34 /* AppDelegate.swift in Sources */,
 				C85E6BD524CC7EC3007E2B81 /* FirstWriterViewController.swift in Sources */,
 				C8AC0EC624CBBC280068FC79 /* StartViewController.swift in Sources */,
+				C85E6BD924CCC512007E2B81 /* CellTableViewCell.swift in Sources */,
 				C8773E5824C8050300786A34 /* HopperHacksProject.xcdatamodeld in Sources */,
 				C8AC0ECC24CBBC920068FC79 /* SignUpUsername&PasswordViewController.swift in Sources */,
 				C85E6BD724CC7EE9007E2B81 /* SecondWriterViewController.swift in Sources */,
