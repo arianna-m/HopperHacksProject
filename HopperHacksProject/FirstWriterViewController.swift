@@ -31,6 +31,8 @@ extension UIViewController: UITableViewDelegate, UITableViewDataSource {
     
     public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as? CellTableViewCell
+        cell?.label.text = names[indexPath.row]
+        cell?.img.image = UIImage(named: names[indexPath.row])
         return cell!
     }
 }
