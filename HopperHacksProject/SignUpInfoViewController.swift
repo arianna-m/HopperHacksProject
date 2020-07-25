@@ -14,7 +14,7 @@ class SignUpInfoViewController: UIViewController, UIPickerViewDataSource, UIPick
     @IBOutlet weak var firstNameTextField: UITextField!
     @IBOutlet weak var lastNameTextField: UITextField!
     
-    var state: String?
+    var state = "Alabama"
     
     let locations = ["Alabama", "Alaska", "Arizona", "Arkansas", "California", "Colorado", "Connecticut", "Delaware", "Florida", "Georgia", "Hawaii", "Idaho", "Illinois", "Indiana", "Iowa", "Kansas", "Kentucky", "Louisiana", "Maine", "Maryland", "Massachusetts", "Michigan", "Minnesota", "Mississippi", "Missouri", "Montana", "Nebraska", "Nevada", "New Hampshire", "New Jersey", "New Mexico", "New York", "North Carolina", "North Dakota", "Ohio", "Oklahoma", "Oregon", "Pennsylvania", "Rhode Island", "South Carolina", "South Dakota", "Tennessee", "Texas", "Utah", "Vermont", "Virginia", "Washington", "West Virginia", "Wisconsin", "Wyoming"]
     
@@ -60,7 +60,7 @@ class SignUpInfoViewController: UIViewController, UIPickerViewDataSource, UIPick
         if let vc = segue.destination as? SignUpUsername_PasswordViewController {
             vc.firstName = firstNameTextField.text ?? ""
             vc.lastName = lastNameTextField.text ?? ""
-            vc.state = self.state ?? ""
+            vc.state = self.state
         }
     }
 
