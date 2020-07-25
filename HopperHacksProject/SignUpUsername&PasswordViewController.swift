@@ -20,7 +20,8 @@ class SignUpUsername_PasswordViewController: UIViewController, UIPickerViewDataS
     @IBOutlet weak var userTypePickerView: UIPickerView!
     
     // Declaring variables
-    var selectedJob = ""
+    // set selectedJob default to Receive in case user chooses not to move pickerView - didSelectRow function will not run, but intent will be to choose receive letters
+    var selectedJob = "Receive letters"
     let job = ["Receive letters", "Send letters"]
     
     // PickerView implementation
@@ -36,7 +37,7 @@ class SignUpUsername_PasswordViewController: UIViewController, UIPickerViewDataS
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         selectedJob = job[row]
     }
-    
+        
     func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
         return job.count
     }
@@ -71,7 +72,7 @@ class SignUpUsername_PasswordViewController: UIViewController, UIPickerViewDataS
         else{
             Auth.auth().createUser(withEmail: username.text!, password: password.text!){ (user, error) in
                 if error == nil {
-                    self.performSegue(withIdentifier: "signupToHome", sender: self)
+                    self.performSegue(withIdentifier: "\(self.selectedJob)Segue", sender: nil)
                 }
                 else{
                     let alertController = UIAlertController(title: "Error", message: error?.localizedDescription, preferredStyle: .alert)
@@ -82,7 +83,6 @@ class SignUpUsername_PasswordViewController: UIViewController, UIPickerViewDataS
                }
             }
         }
-        self.performSegue(withIdentifier: "\(selectedJob)Segue", sender: nil)
         
     }
             
