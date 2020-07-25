@@ -443,6 +443,8 @@
                     </view>
                     <navigationItem key="navigationItem" id="26t-sv-L31"/>
                     <connections>
+                        <outlet property="firstNameTextField" destination="utg-Nn-Rtv" id="49E-We-7aN"/>
+                        <outlet property="lastNameTextField" destination="7WG-bR-KPI" id="oZ8-3r-aTv"/>
                         <outlet property="locationPickerView" destination="XKT-Pr-JnB" id="905-Ep-SWI"/>
                     </connections>
                 </viewController>

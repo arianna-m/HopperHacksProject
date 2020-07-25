@@ -22,7 +22,7 @@ class SignUpUsername_PasswordViewController: UIViewController, UIPickerViewDataS
     // Declaring variables
     // set selectedJob default to Receive in case user chooses not to move pickerView - didSelectRow function will not run, but intent will be to choose receive letters
     var selectedJob = "Receive letters"
-    let job = ["Receive letters", "Send letters"]
+    let job = ["Receive letters", "Write letters"]
     
     // PickerView implementation
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
