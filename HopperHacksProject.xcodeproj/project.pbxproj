@@ -3,13 +3,15 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		28D7A703D076CFF9BE7D0704 /* Pods_HopperHacksProjectTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F6E9415215D24F6FB27444C /* Pods_HopperHacksProjectTests.framework */; };
 		2B1FE5BDD12A08EB5886B27C /* Pods_HopperHacksProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CF500A7863BF940F9F6166F /* Pods_HopperHacksProject.framework */; };
 		4C774CDAC80F161DC586A08E /* Pods_HopperHacksProject_HopperHacksProjectUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4EBF53110B96AC34A5107C55 /* Pods_HopperHacksProject_HopperHacksProjectUITests.framework */; };
+		C85E6BD524CC7EC3007E2B81 /* FirstWriterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C85E6BD424CC7EC3007E2B81 /* FirstWriterViewController.swift */; };
+		C85E6BD724CC7EE9007E2B81 /* SecondWriterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C85E6BD624CC7EE9007E2B81 /* SecondWriterViewController.swift */; };
 		C8773E4C24C8050300786A34 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8773E4B24C8050300786A34 /* AppDelegate.swift */; };
 		C8773E4E24C8050300786A34 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8773E4D24C8050300786A34 /* SceneDelegate.swift */; };
 		C8773E5024C8050300786A34 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8773E4F24C8050300786A34 /* FirstViewController.swift */; };
@@ -20,7 +22,12 @@
 		C8773E5D24C8050D00786A34 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C8773E5B24C8050D00786A34 /* LaunchScreen.storyboard */; };
 		C8773E6824C8050D00786A34 /* HopperHacksProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8773E6724C8050D00786A34 /* HopperHacksProjectTests.swift */; };
 		C8773E7324C8050D00786A34 /* HopperHacksProjectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8773E7224C8050D00786A34 /* HopperHacksProjectUITests.swift */; };
-		C8E1304324CA560A001DB7C0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C8E1304224CA5609001DB7C0 /* GoogleService-Info.plist */; };
+		C8AC0EBC24CBB7240068FC79 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C8AC0EBB24CBB7240068FC79 /* GoogleService-Info.plist */; };
+		C8AC0EC624CBBC280068FC79 /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8AC0EC524CBBC280068FC79 /* StartViewController.swift */; };
+		C8AC0EC824CBBC540068FC79 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8AC0EC724CBBC540068FC79 /* LoginViewController.swift */; };
+		C8AC0ECA24CBBC760068FC79 /* SignUpInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8AC0EC924CBBC760068FC79 /* SignUpInfoViewController.swift */; };
+		C8AC0ECC24CBBC920068FC79 /* SignUpUsername&PasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8AC0ECB24CBBC920068FC79 /* SignUpUsername&PasswordViewController.swift */; };
+		C8AC0ECE24CBBE3E0068FC79 /* IAmAViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8AC0ECD24CBBE3E0068FC79 /* IAmAViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +57,8 @@
 		6F6E9415215D24F6FB27444C /* Pods_HopperHacksProjectTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HopperHacksProjectTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		88D42F70605DCA21E45BD436 /* Pods-HopperHacksProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HopperHacksProject.release.xcconfig"; path = "Target Support Files/Pods-HopperHacksProject/Pods-HopperHacksProject.release.xcconfig"; sourceTree = "<group>"; };
 		965F2BA0CD5A11FCBADFEF3F /* Pods-HopperHacksProject-HopperHacksProjectUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HopperHacksProject-HopperHacksProjectUITests.debug.xcconfig"; path = "Target Support Files/Pods-HopperHacksProject-HopperHacksProjectUITests/Pods-HopperHacksProject-HopperHacksProjectUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		C85E6BD424CC7EC3007E2B81 /* FirstWriterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstWriterViewController.swift; sourceTree = "<group>"; };
+		C85E6BD624CC7EE9007E2B81 /* SecondWriterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondWriterViewController.swift; sourceTree = "<group>"; };
 		C8773E4824C8050300786A34 /* HopperHacksProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HopperHacksProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C8773E4B24C8050300786A34 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C8773E4D24C8050300786A34 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -66,7 +75,12 @@
 		C8773E6E24C8050D00786A34 /* HopperHacksProjectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HopperHacksProjectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C8773E7224C8050D00786A34 /* HopperHacksProjectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HopperHacksProjectUITests.swift; sourceTree = "<group>"; };
 		C8773E7424C8050D00786A34 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C8E1304224CA5609001DB7C0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		C8AC0EBB24CBB7240068FC79 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		C8AC0EC524CBBC280068FC79 /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
+		C8AC0EC724CBBC540068FC79 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		C8AC0EC924CBBC760068FC79 /* SignUpInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpInfoViewController.swift; sourceTree = "<group>"; };
+		C8AC0ECB24CBBC920068FC79 /* SignUpUsername&PasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SignUpUsername&PasswordViewController.swift"; sourceTree = "<group>"; };
+		C8AC0ECD24CBBE3E0068FC79 /* IAmAViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IAmAViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,7 +121,6 @@
 				0770642C884F380443AA23A3 /* Pods-HopperHacksProjectTests.debug.xcconfig */,
 				28FECD187E7A9694FBCD577B /* Pods-HopperHacksProjectTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -150,11 +163,18 @@
 				C8773E4D24C8050300786A34 /* SceneDelegate.swift */,
 				C8773E4F24C8050300786A34 /* FirstViewController.swift */,
 				C8773E5124C8050300786A34 /* SecondViewController.swift */,
+				C85E6BD424CC7EC3007E2B81 /* FirstWriterViewController.swift */,
+				C85E6BD624CC7EE9007E2B81 /* SecondWriterViewController.swift */,
 				C8773E5324C8050300786A34 /* Main.storyboard */,
+				C8AC0EC524CBBC280068FC79 /* StartViewController.swift */,
+				C8AC0EC924CBBC760068FC79 /* SignUpInfoViewController.swift */,
+				C8AC0ECB24CBBC920068FC79 /* SignUpUsername&PasswordViewController.swift */,
+				C8AC0EC724CBBC540068FC79 /* LoginViewController.swift */,
+				C8AC0ECD24CBBE3E0068FC79 /* IAmAViewController.swift */,
 				C8773E5924C8050D00786A34 /* Assets.xcassets */,
 				C8773E5B24C8050D00786A34 /* LaunchScreen.storyboard */,
 				C8773E5E24C8050D00786A34 /* Info.plist */,
-				C8E1304224CA5609001DB7C0 /* GoogleService-Info.plist */,
+				C8AC0EBB24CBB7240068FC79 /* GoogleService-Info.plist */,
 				C8773E5624C8050300786A34 /* HopperHacksProject.xcdatamodeld */,
 			);
 			path = HopperHacksProject;
@@ -288,7 +308,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C8773E5D24C8050D00786A34 /* LaunchScreen.storyboard in Resources */,
-				C8E1304324CA560A001DB7C0 /* GoogleService-Info.plist in Resources */,
+				C8AC0EBC24CBB7240068FC79 /* GoogleService-Info.plist in Resources */,
 				C8773E5A24C8050D00786A34 /* Assets.xcassets in Resources */,
 				C8773E5524C8050300786A34 /* Main.storyboard in Resources */,
 			);
@@ -418,10 +438,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C8AC0EC824CBBC540068FC79 /* LoginViewController.swift in Sources */,
 				C8773E5224C8050300786A34 /* SecondViewController.swift in Sources */,
+				C8AC0ECE24CBBE3E0068FC79 /* IAmAViewController.swift in Sources */,
+				C8AC0ECA24CBBC760068FC79 /* SignUpInfoViewController.swift in Sources */,
 				C8773E5024C8050300786A34 /* FirstViewController.swift in Sources */,
 				C8773E4C24C8050300786A34 /* AppDelegate.swift in Sources */,
+				C85E6BD524CC7EC3007E2B81 /* FirstWriterViewController.swift in Sources */,
+				C8AC0EC624CBBC280068FC79 /* StartViewController.swift in Sources */,
 				C8773E5824C8050300786A34 /* HopperHacksProject.xcdatamodeld in Sources */,
+				C8AC0ECC24CBBC920068FC79 /* SignUpUsername&PasswordViewController.swift in Sources */,
+				C85E6BD724CC7EE9007E2B81 /* SecondWriterViewController.swift in Sources */,
 				C8773E4E24C8050300786A34 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

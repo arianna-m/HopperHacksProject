@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>1006399597946-6b7u3v9q33bl703ah42tnncjnnaamuce.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.1006399597946-6b7u3v9q33bl703ah42tnncjnnaamuce</string>
+	<key>API_KEY</key>
+	<string>AIzaSyBri8ecVQ6q5krMAYgxT8QiPzb2bG5YyUE</string>
+	<key>GCM_SENDER_ID</key>
+	<string>1006399597946</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>HopperHacks.Project</string>
+	<key>PROJECT_ID</key>
+	<string>hopperhacks-e57a0</string>
+	<key>STORAGE_BUCKET</key>
+	<string>hopperhacks-e57a0.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:1006399597946:ios:aa61d84479aaa59d97bac3</string>
+	<key>DATABASE_URL</key>
+	<string>https://hopperhacks-e57a0.firebaseio.com</string>
+</dict>
+</plist>
