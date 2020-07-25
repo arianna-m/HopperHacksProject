@@ -29,6 +29,7 @@
 		C8AC0ECA24CBBC760068FC79 /* SignUpInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8AC0EC924CBBC760068FC79 /* SignUpInfoViewController.swift */; };
 		C8AC0ECC24CBBC920068FC79 /* SignUpUsername&PasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8AC0ECB24CBBC920068FC79 /* SignUpUsername&PasswordViewController.swift */; };
 		C8AC0ECE24CBBE3E0068FC79 /* IAmAViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8AC0ECD24CBBE3E0068FC79 /* IAmAViewController.swift */; };
+		C9C58ED124CCD28D00B39907 /* WriteLettersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9C58ED024CCD28D00B39907 /* WriteLettersViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,6 +84,7 @@
 		C8AC0EC924CBBC760068FC79 /* SignUpInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpInfoViewController.swift; sourceTree = "<group>"; };
 		C8AC0ECB24CBBC920068FC79 /* SignUpUsername&PasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SignUpUsername&PasswordViewController.swift"; sourceTree = "<group>"; };
 		C8AC0ECD24CBBE3E0068FC79 /* IAmAViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IAmAViewController.swift; sourceTree = "<group>"; };
+		C9C58ED024CCD28D00B39907 /* WriteLettersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WriteLettersViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -166,6 +168,7 @@
 				C8773E4F24C8050300786A34 /* FirstViewController.swift */,
 				C8773E5124C8050300786A34 /* SecondViewController.swift */,
 				C85E6BD424CC7EC3007E2B81 /* FirstWriterViewController.swift */,
+				C9C58ED024CCD28D00B39907 /* WriteLettersViewController.swift */,
 				C85E6BD624CC7EE9007E2B81 /* SecondWriterViewController.swift */,
 				C8773E5324C8050300786A34 /* Main.storyboard */,
 				C8AC0EC524CBBC280068FC79 /* StartViewController.swift */,
@@ -453,6 +456,7 @@
 				C8773E5824C8050300786A34 /* HopperHacksProject.xcdatamodeld in Sources */,
 				C8AC0ECC24CBBC920068FC79 /* SignUpUsername&PasswordViewController.swift in Sources */,
 				C85E6BD724CC7EE9007E2B81 /* SecondWriterViewController.swift in Sources */,
+				C9C58ED124CCD28D00B39907 /* WriteLettersViewController.swift in Sources */,
 				C8773E4E24C8050300786A34 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
