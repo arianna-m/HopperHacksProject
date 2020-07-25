@@ -10,6 +10,11 @@ import UIKit
 
 class WriteLettersViewController: UIViewController {
 
+    @IBOutlet weak var messageTextField: UITextField!
+    @IBOutlet weak var emailTextField: UITextField!
+    @IBOutlet weak var sendButton: UIButton!
+    @IBAction func sendButtonTouchUp(_ sender: UIButton) {
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
 
