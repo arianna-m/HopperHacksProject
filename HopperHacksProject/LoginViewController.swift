@@ -11,7 +11,12 @@ import FirebaseAuth
 import Firebase
 
 class LoginViewController: UIViewController {
-
+    
+    @IBOutlet weak var username: UITextField!
+    
+    
+    @IBOutlet weak var password: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -30,22 +35,22 @@ class LoginViewController: UIViewController {
     */
 
     
-//    @IBAction func loginAction(_ sender: UIButton) {
-//        Auth.auth().signIn(withEmail: username.text!, password: password.text!) { (user, error) in
-//        guard let strongSelf = self else { return
-//           if error == nil{
-//             self.performSegue(withIdentifier: "loginToHome", sender: self)
-//                          }
-//            else{
-//             let alertController = UIAlertController(title: "Error", message: error?.localizedDescription, preferredStyle: .alert)
-//             let defaultAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
-//
-//              alertController.addAction(defaultAction)
-//              self.present(alertController, animated: true, completion: nil)
-//                 }
-//        }
-//    }
-//
-//    }
-//}
+    @IBAction func loginAction(_ sender: UIButton) {
+        Auth.auth().signIn(withEmail: username.text!, password: password.text!) { (user, error) in
+        guard let strongSelf = self else { return
+           if error == nil{
+             self.performSegue(withIdentifier: "loginToHome", sender: self)
+                          }
+            else{
+             let alertController = UIAlertController(title: "Error", message: error?.localizedDescription, preferredStyle: .alert)
+             let defaultAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
+
+              alertController.addAction(defaultAction)
+              self.present(alertController, animated: true, completion: nil)
+                 }
+        }
+    }
+
+    }
 }
+

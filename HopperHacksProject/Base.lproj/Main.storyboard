@@ -99,6 +99,21 @@
             </objects>
             <point key="canvasLocation" x="357.97101449275362" y="-1633.2589285714284"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="y47-fB-fMV">
+            <objects>
+                <viewController id="CKP-Qi-LfE" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="1IR-DO-y0N">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="Baw-1D-dTZ"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WJK-Y3-aG3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1187" y="-1627"/>
+        </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="BUy-N6-wiv">
             <objects>
@@ -247,7 +262,7 @@
                                 <state key="normal" title="Login"/>
                                 <connections>
                                     <action selector="loginAction:" destination="o8J-2Q-0fB" eventType="touchUpInside" id="jJi-F1-XQU"/>
-                                    <segue destination="UHD-ia-pHA" kind="show" id="qT8-VS-VQV"/>
+                                    <segue destination="UHD-ia-pHA" kind="show" identifier="loginToHome" id="qT8-VS-VQV"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OPJ-md-AXY">
@@ -281,6 +296,10 @@
                         <viewLayoutGuide key="safeArea" id="U8N-tZ-J3e"/>
                     </view>
                     <navigationItem key="navigationItem" id="Blb-lu-PUI"/>
+                    <connections>
+                        <outlet property="password" destination="W0X-zX-C9y" id="hOV-63-mrU"/>
+                        <outlet property="username" destination="elo-9S-yFF" id="VHq-g0-3dw"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ask-gc-rLq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -442,7 +461,6 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Done"/>
                                 <connections>
-                                    <action selector="secondNext:" destination="XGe-ce-7Om" eventType="touchUpInside" id="xf8-H9-AX4"/>
                                     <segue destination="49e-Tb-3d3" kind="show" identifier="signupToHome" id="RAD-gq-rHd"/>
                                 </connections>
                             </button>
