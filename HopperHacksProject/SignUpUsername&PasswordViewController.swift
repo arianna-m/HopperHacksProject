@@ -9,6 +9,7 @@
 import UIKit
 import FirebaseAuth
 import Firebase
+import FirebaseDatabase
 
 class SignUpUsername_PasswordViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate, UITextFieldDelegate {
     
@@ -23,9 +24,10 @@ class SignUpUsername_PasswordViewController: UIViewController, UIPickerViewDataS
     // set selectedJob default to Receive in case user chooses not to move pickerView - didSelectRow function will not run, but intent will be to choose receive letters
     var selectedJob = "Receive letters"
     let job = ["Receive letters", "Write letters"]
-    // firstName and lastName receive values from SignUpInfoViewController
+    // firstName, lastName, and state receive values from SignUpInfoViewController
     var firstName: String?
     var lastName: String?
+    var state: String?
     
     // PickerView implementation
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
@@ -49,6 +51,10 @@ class SignUpUsername_PasswordViewController: UIViewController, UIPickerViewDataS
     override func viewDidLoad() {
         super.viewDidLoad()
         username.delegate = self
+        password.delegate = self
+        confirmPassword.delegate = self
+        
+        username.becomeFirstResponder()
 
         // Do any additional setup after loading the view.
     }
@@ -77,6 +83,18 @@ class SignUpUsername_PasswordViewController: UIViewController, UIPickerViewDataS
             Auth.auth().createUser(withEmail: username.text!, password: password.text!){ (user, error) in
                 if error == nil {
                     self.performSegue(withIdentifier: "\(self.selectedJob)Segue", sender: nil)
+                    guard let uid = Auth.auth().currentUser?.uid else {return}
+
+                    let ref = Database.database().reference().child("Users/\(uid)")
+                    
+                    //Sets particular values to database
+                    ref.child("First Name").setValue(self.firstName)
+                    ref.child("Last Name").setValue(self.lastName)
+                    ref.child("Job").setValue(self.selectedJob)
+                    ref.child("State").setValue(self.state)
+                    
+                    self.dismiss(animated: true, completion: nil)
+
                 }
                 else{
                     let alertController = UIAlertController(title: "Error", message: error?.localizedDescription, preferredStyle: .alert)
