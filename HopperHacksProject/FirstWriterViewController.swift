@@ -10,7 +10,6 @@ import UIKit
 
 class FirstWriterViewController: UIViewController {
     
-    var name = ["Jane Taylor", "Kyle Tran", "Mary Lane", "Joe Brown", "Jamie Rose", "Chance Kim"]
     
     @IBOutlet weak var tableView: UITableView!
     
@@ -22,14 +21,16 @@ class FirstWriterViewController: UIViewController {
 
 }
 
+    var names = ["Jane Taylor", "Kyle Tran", "Mary Lane", "Joe Brown", "Jamie Rose", "Chance Kim"]
+
 extension UIViewController: UITableViewDelegate, UITableViewDataSource {
-    
-    public func numberOfSections(in tableView: UITableView) -> Int {
-        return name.count
+    public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return names.count
     }
+
     
     public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as? CellTableViewCell
-        return cell 
+        return cell!
     }
 }
