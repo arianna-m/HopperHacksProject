@@ -31,6 +31,7 @@
 		C8AC0ECE24CBBE3E0068FC79 /* IAmAViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8AC0ECD24CBBE3E0068FC79 /* IAmAViewController.swift */; };
 		C9C58ED124CCD28D00B39907 /* WriteLettersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9C58ED024CCD28D00B39907 /* WriteLettersViewController.swift */; };
 		C9C58ED324CCECF900B39907 /* ReadingCellViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9C58ED224CCECF900B39907 /* ReadingCellViewController.swift */; };
+		C9CE070724CD0C690036AFFC /* ReceiveTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9CE070624CD0C690036AFFC /* ReceiveTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -87,6 +88,7 @@
 		C8AC0ECD24CBBE3E0068FC79 /* IAmAViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IAmAViewController.swift; sourceTree = "<group>"; };
 		C9C58ED024CCD28D00B39907 /* WriteLettersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WriteLettersViewController.swift; sourceTree = "<group>"; };
 		C9C58ED224CCECF900B39907 /* ReadingCellViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadingCellViewController.swift; sourceTree = "<group>"; };
+		C9CE070624CD0C690036AFFC /* ReceiveTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceiveTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -226,6 +228,7 @@
 			isa = PBXGroup;
 			children = (
 				C8773E4F24C8050300786A34 /* FirstViewController.swift */,
+				C9CE070624CD0C690036AFFC /* ReceiveTableViewCell.swift */,
 				C8773E5124C8050300786A34 /* SecondViewController.swift */,
 			);
 			path = Receiver;
@@ -482,6 +485,7 @@
 				C8AC0EC624CBBC280068FC79 /* StartViewController.swift in Sources */,
 				C85E6BD924CCC512007E2B81 /* CellTableViewCell.swift in Sources */,
 				C8773E5824C8050300786A34 /* HopperHacksProject.xcdatamodeld in Sources */,
+				C9CE070724CD0C690036AFFC /* ReceiveTableViewCell.swift in Sources */,
 				C8AC0ECC24CBBC920068FC79 /* SignUpUsername&PasswordViewController.swift in Sources */,
 				C85E6BD724CC7EE9007E2B81 /* SecondWriterViewController.swift in Sources */,
 				C9C58ED124CCD28D00B39907 /* WriteLettersViewController.swift in Sources */,
