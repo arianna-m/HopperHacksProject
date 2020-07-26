@@ -8,12 +8,8 @@
 
 import UIKit
 
-class EditProfileViewController: UIViewController {
-    
-    @IBOutlet weak var editProfilePicture: UIImageView!
-    
-    @IBAction func getProfilePicture(_ sender: UIButton) {
-    }
+class EditProfileViewController: UIViewController{
+
     
     override func viewDidLoad() {
         super.viewDidLoad()

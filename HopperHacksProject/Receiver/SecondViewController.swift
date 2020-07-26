@@ -8,17 +8,38 @@
 
 import UIKit
 
-class SecondViewController: UIViewController {
-
+class SecondViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+    
+    var ImagePicker = UIImagePickerController()
+    
+    @IBAction func getNewProfilePhoto(_ sender: UIButton) {
+        ImagePicker.sourceType = .photoLibrary
+        
+        present(ImagePicker, animated: true, completion: nil)
+    }
+    
+    @IBOutlet weak var profilePhoto: UIImageView!
+    
     @IBOutlet weak var bio: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        ImagePicker.delegate = self
         // Do any additional setup after loading the view.
         self.navigationController?.setNavigationBarHidden(true, animated: false)
         bio.text = "From Paradise, California\nRetired helium balloon salesman\nI wear glasses\nEnjoy playing tennis and watching TV"
+        
+        func ImagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+        
+        if let selectedImage = info[UIImagePickerController.InfoKey.originalImage] as? UIImage {
+            profilePhoto.image = selectedImage
+        }
+        // go back to our ViewController
+        
+        ImagePicker.dismiss(animated: true, completion: nil)
     }
 
 
 }
 
+}
