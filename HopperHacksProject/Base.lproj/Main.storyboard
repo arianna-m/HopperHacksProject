@@ -7,57 +7,6 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Item 2-->
-        <scene sceneID="53C-y4-8ST">
-            <objects>
-                <viewController id="eVs-A3-Pll" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Pu2-IO-bjn">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="9BL-uH-HoG"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Item 2" id="4N9-oH-5de"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="GbT-sv-15w" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-1381" y="1983"/>
-        </scene>
-        <!--Item 1-->
-        <scene sceneID="OLL-WL-D06">
-            <objects>
-                <viewController id="AhM-Hu-b7d" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="hFD-CL-FRN">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="5Cr-e2-YPD"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Item 1" id="Bqf-sC-EXN"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="xdL-D9-jHs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-1381" y="1310"/>
-        </scene>
-        <!--Tab Bar Controller-->
-        <scene sceneID="rQE-d1-dZw">
-            <objects>
-                <tabBarController id="UHD-ia-pHA" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" id="asb-Tp-X02"/>
-                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="YTO-i7-BkU">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    </tabBar>
-                    <connections>
-                        <segue destination="AhM-Hu-b7d" kind="relationship" relationship="viewControllers" id="hhW-MU-CZe"/>
-                        <segue destination="eVs-A3-Pll" kind="relationship" relationship="viewControllers" id="zl8-YQ-25i"/>
-                    </connections>
-                </tabBarController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="9nf-Hw-tWt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-2178" y="1511"/>
-        </scene>
         <!--Sent Mail-->
         <scene sceneID="aQh-kS-JX5">
             <objects>
@@ -410,12 +359,12 @@
                                     <action selector="getNewProfilePhoto:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="cds-8k-nW6"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="edit bio here" borderStyle="bezel" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5l7-JI-En9">
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Enter bio here" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5l7-JI-En9">
                                 <rect key="frame" x="37" y="588" width="340" height="115"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="textColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="20"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8eQ-u6-zrP">
