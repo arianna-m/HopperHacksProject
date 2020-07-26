@@ -28,11 +28,10 @@ class SecondViewController: UIViewController, UIImagePickerControllerDelegate, U
         super.viewDidLoad()
         ImagePicker.delegate = self
         // Do any additional setup after loading the view.
+
+    }
     
-    
-        
-        
-        func ImagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
         
         if let selectedImage = info[UIImagePickerController.InfoKey.originalImage] as? UIImage {
             profilePhoto.image = selectedImage
@@ -41,10 +40,7 @@ class SecondViewController: UIViewController, UIImagePickerControllerDelegate, U
         
         ImagePicker.dismiss(animated: true, completion: nil)
     }
-     
-
-}
-
+    
     @IBAction func updateBio(_ sender: UIButton) {
         if let newTitle = bioTextField.text {
         bio.text = newTitle
