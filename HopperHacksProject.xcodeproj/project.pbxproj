@@ -181,7 +181,6 @@
 				C8773E5E24C8050D00786A34 /* Info.plist */,
 				C8AC0EBB24CBB7240068FC79 /* GoogleService-Info.plist */,
 				C8773E5624C8050300786A34 /* HopperHacksProject.xcdatamodeld */,
-				C85E6BDC24CD0D5B007E2B81 /* EditProfileViewController.swift */,
 			);
 			path = HopperHacksProject;
 			sourceTree = "<group>";
@@ -233,6 +232,7 @@
 				C8773E4F24C8050300786A34 /* FirstViewController.swift */,
 				C9CE070624CD0C690036AFFC /* ReceiveTableViewCell.swift */,
 				C8773E5124C8050300786A34 /* SecondViewController.swift */,
+				C85E6BDC24CD0D5B007E2B81 /* EditProfileViewController.swift */,
 			);
 			path = Receiver;
 			sourceTree = "<group>";

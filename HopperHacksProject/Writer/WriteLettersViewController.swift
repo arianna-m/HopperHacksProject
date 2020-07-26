@@ -18,10 +18,18 @@ class WriteLettersViewController: UIViewController {
     var name = "John Smith"
     var ref = Database.database().reference()
     let userID = Auth.auth().currentUser?.uid ?? ""
+    var senderName = "No one"
 
     @IBAction func sendButtonTouchUp(_ sender: UIButton) {
-        let fileID = Database.database().reference().child("Sent Letters/\(name)/\(Auth.auth().currentUser?.uid ?? "")")
-        let letter = ["Message": messageTextField.text, "Email": emailTextField.text]
+        let ref2 = Database.database().reference().child("Users/\(Auth.auth().currentUser?.uid ?? "")")
+        ref2.observeSingleEvent(of: .value) { (snapshot) in
+            let senderInfo = snapshot.value as! NSDictionary
+            self.senderName = senderInfo["First Name"] as! String
+            self.senderName += " " + (senderInfo["Last Name"] as! String)
+        }
+        
+        let fileID = Database.database().reference().child("Sent Letters/\(name)")
+        let letter = ["Message": messageTextField.text, "Email": emailTextField.text, "Sender": senderName] as [String : String?]
         fileID.setValue(letter)
         
         self.dismiss(animated: true, completion: nil)
