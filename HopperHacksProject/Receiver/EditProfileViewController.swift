@@ -8,12 +8,11 @@
 
 import UIKit
 
-class EditProfileViewController: UIViewController {
+class EditProfileViewController: UIViewController{
+
+    @IBOutlet weak var textField: UITextField!
     
-    @IBOutlet weak var editProfilePicture: UIImageView!
     
-    @IBAction func getProfilePicture(_ sender: UIButton) {
-    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
