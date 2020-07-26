@@ -22,12 +22,15 @@ class SecondViewController: UIViewController, UIImagePickerControllerDelegate, U
     
     @IBOutlet weak var bio: UILabel!
     
+    @IBOutlet weak var bioTextField: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         ImagePicker.delegate = self
         // Do any additional setup after loading the view.
-        self.navigationController?.setNavigationBarHidden(true, animated: false)
-        bio.text = "From Paradise, California\nRetired helium balloon salesman\nI wear glasses\nEnjoy playing tennis and watching TV"
+    
+    
+        
         
         func ImagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
         
@@ -38,8 +41,13 @@ class SecondViewController: UIViewController, UIImagePickerControllerDelegate, U
         
         ImagePicker.dismiss(animated: true, completion: nil)
     }
-
+     
 
 }
 
+    @IBAction func updateBio(_ sender: UIButton) {
+        if let newTitle = bioTextField.text {
+        bio.text = newTitle
+    }
+}
 }
